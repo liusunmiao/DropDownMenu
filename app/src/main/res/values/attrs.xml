@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DropDownMenu">
+        <attr name="underlineColor" format="color"></attr>
+        <attr name="underlineHeight" format="dimension"></attr>
+        <attr name="dividerColor" format="color"></attr>
+        <attr name="textSelectColor" format="color"></attr>
+        <attr name="textUnSelectColor" format="color"></attr>
+        <attr name="menuBackgroundColor" format="color"></attr>
+        <attr name="maskColor" format="color"></attr>
+        <attr name="menuTextSize" format="dimension"></attr>
+        <attr name="menuSelectIcon" format="reference"></attr>
+        <attr name="menuUnSelectIcon" format="reference"></attr>
+        <attr name="dividerShow" format="boolean"></attr>
+    </declare-styleable>
+</resources>
