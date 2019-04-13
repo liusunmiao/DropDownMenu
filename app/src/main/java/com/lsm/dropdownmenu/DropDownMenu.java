@@ -160,6 +160,7 @@ public class DropDownMenu extends LinearLayout {
 
     /**
      * 如果是listview或者gridview 获取它们所有子条目的总高度
+     * 该方法的调用要在setDropDownMenu()方法前调用
      *
      * @param view
      * @return

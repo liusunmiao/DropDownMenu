@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         constellationSelect = new ArrayList<>();
         initViews();
         View contentView = getLayoutInflater().inflate(R.layout.content_layout, null);
+        //设置dropDownMenu
         dropDownMenu.setDropDownMenu(tabTextList, popupsView, contentView);
         tvContent = contentView.findViewById(R.id.tv_content);
         tvContent.setText("内容布局");
@@ -53,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
                 cityAdapter.setSelectPostion(position);
                 String select = position == 0 ? "城市" : citys[position];
                 tvContent.setText(select);
+                //根据选中设置tab文字
                 dropDownMenu.setTabText(select);
+                //关闭menu
                 dropDownMenu.closeMenu();
             }
         });
