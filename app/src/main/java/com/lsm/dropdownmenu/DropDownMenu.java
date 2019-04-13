@@ -124,6 +124,7 @@ public class DropDownMenu extends LinearLayout {
         for (int i = 0; i < tabTextList.size(); i++) {
             addTab(tabTextList, i);
         }
+        //添加内容区域
         containerView.addView(contentView, 0);
         //添加遮罩层
         maskView = new View(getContext());
@@ -160,7 +161,7 @@ public class DropDownMenu extends LinearLayout {
 
     /**
      * 如果是listview或者gridview 获取它们所有子条目的总高度
-     * 该方法的调用要在setDropDownMenu()方法前调用
+     *
      *
      * @param view
      * @return
@@ -194,6 +195,7 @@ public class DropDownMenu extends LinearLayout {
      * 如果列表用的recyclerView 通过该方法设置它显示的高度
      * 具体的测量在recyclerView设置setLayoutManager是重写onMeasure方法
      * 如果超过屏幕高度的1/2，显示屏幕高度的1/2 如果没有就正常显示
+     * 该方法的调用要在setDropDownMenu()方法前调用
      *
      * @param height
      */
